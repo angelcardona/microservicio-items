@@ -7,6 +7,7 @@ public class Item {
     private Integer cantidad;
     private Producto productoDetalle;
 
+
     public Double calcularPrecioTotal(){
         if(cantidad == null || productoDetalle.getPrecio()== null){
             return null;

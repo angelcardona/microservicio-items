@@ -1,5 +1,6 @@
 package com.microservicios.items.infraestructura.adpatadores.salida.persistencia;
 
+import com.microservicios.items.dominio.modelos.Producto;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,6 +12,8 @@ public class ItemEntity {
     private Long id;
     private Long productoId;
     private Integer cantidad;
+    @Transient
+    private Producto productoDetalle;
 
     public ItemEntity(Long id, Long productoId, Integer cantidad) {
         this.id = id;

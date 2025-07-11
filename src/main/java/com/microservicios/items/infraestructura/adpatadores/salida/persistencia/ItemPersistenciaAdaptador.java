@@ -2,10 +2,12 @@ package com.microservicios.items.infraestructura.adpatadores.salida.persistencia
 
 import com.microservicios.items.aplicacion.puertos.salida.ItemPuertoSalida;
 import com.microservicios.items.dominio.modelos.Item;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 
+@Component
 public class ItemPersistenciaAdaptador implements ItemPuertoSalida {
 
     private final ItemJpaRepository repository;
