@@ -8,7 +8,7 @@ public class Item {
     private Producto productoDetalle;
 
 
-    public Double calcularPrecioTotal(){
+    public Double getPrecioTotal(){
         if(cantidad == null || productoDetalle.getPrecio()== null){
             return null;
         }else{
